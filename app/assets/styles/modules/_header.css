@@ -1,5 +1,5 @@
 .header-section{
-    background: radial-gradient(center top, ellipse farthest-corner, #2CB0A6 0%, #006B6C 100%);
+    background: radial-gradient(center top, ellipse farthest-corner, $lightergreen 0%, $darkGreen 100%);
     text-align: center;
     position: relative;
 

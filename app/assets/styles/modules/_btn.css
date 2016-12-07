@@ -1,0 +1,23 @@
+.btn{
+    text-decoration: none;
+    color: $lightGreen;
+    font-size: 1.5rem;
+    background-color: rgba($lightergreen, .5);
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 0 10px 0 10px;
+    box-shadow: 1px 0px 2px $darkGreen;
+
+    @mixin atMedium{
+        font-size: 1.2rem;
+        padding: 10px 30px;
+    }
+
+    &--left-margin{
+        margin-left: 0;
+
+        @mixin atMedium{
+            margin-left: 20px;
+        }
+    }
+}
