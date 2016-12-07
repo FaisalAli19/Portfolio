@@ -1,0 +1,39 @@
+.headline{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #16a99d;
+    margin: 0;
+
+    @mixin atSmall{
+        font-size: 3.5rem;
+    }
+
+    &--small{
+        font-size: 1.25rem;
+        padding: 20px;
+    }
+
+    &--narrow{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.65;
+    }
+
+    &--center{
+        text-align: center;
+    }
+
+    &--light{
+        font-weight: 300;
+    }
+
+    &--light-color{
+        color: $lightGreen;
+    }
+
+    &--large{
+        font-size: 4rem;
+    }
+
+}

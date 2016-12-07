@@ -1,7 +1,35 @@
 .row{
     @mixin clearfix;
 
+    &--padding{
+        padding: 30px 0;
+
+        @mixin atSmall{
+            padding: 80px 0;
+        }
+    }
+
+    &--gutters{
+        margin-right: -65px;
+    }
+
+    &--gutters > div{
+        padding-right: 65px;
+    }
+
+    &--center{
+        text-align: center;
+    }
+
+    &__b-margin-untill-medium{
+        margin-bottom: 1.5rem;
+    }
+
     @mixin atMedium{
+        &__b-margin-untill-medium{
+            margin-bottom: 0;
+        }
+
         &__medium-4{
             float: left;
             width: 33.33%;

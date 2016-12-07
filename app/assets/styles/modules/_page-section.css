@@ -1,0 +1,7 @@
+.page-section{
+    padding: 20px 0;
+
+    &--dark-green{
+        background-color: $darkGreen;
+    }
+}

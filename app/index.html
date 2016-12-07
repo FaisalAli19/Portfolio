@@ -35,58 +35,71 @@
     <!-- Large Hero Section -->
     <section class="large-hero">
         <!-- Hero Image -->
-        <div>
-            <img src="assets/images/hero--large.jpg" alt="Desk image">
+        <div class="large-hero__image">
+            <picture>
+                <source srcset="assets/images/hero--large.jpg 1920w">
+                <source srcset="assets/images/hero--medium.jpg 1380w">
+                <source srcset="assets/images/hero--small.jpg 990w">
+                <img src="assets/images/hero--smaller.jpg 640w" alt="Desk image">
+            </picture>
         </div>
         <!-- Hero Title -->
-        <div>
-            <h1>Hello.</h1>
-            <h2>I'm Faisal Ali, a front-end developer based in Mumbai, India.</h2>
-            <a href="#">View Portfolio</a>
+        <div class="large-hero__content">
+            <h1 class="large-hero__title">Hello.</h1>
+            <h2 class="large-hero__subtitle">I'm Faisal Ali, a front-end developer <br>based in Mumbai, India.</h2>
+            <a href="#" class="btn">
+                    <span class="btn__text">View Portfolio</span>
+            </a>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section class="about-me">
-        <!-- Heading -->
-        <h2>About Me</h2>
-        <!-- Row -->
-        <div class="row">
-            <!-- Image Column -->
-            <div class="row-medium-6">
-                <img src="#" alt="Faisal picture">
-            </div>
-            <!-- Content Column -->
-            <div class="row-medium-6">
-                <h3>Hi.</h3>
-                <p>I'm Faisal Ali, a front-end developer based in Mumbai, India.</p>
-                <p>I specialize in converting the static design to fully responsive, interactive and optimized websites.</p>
-                <a href="#">More about me</a>
+    <section class="page-section">
+        <div class="wrapper">
+            <!-- Heading -->
+            <h2 class="headline headline--center">About <strong>Me</strong></h2>
+            <!-- Row -->
+            <div class="row row--padding">
+                <!-- Image Column -->
+                <div class="row__medium-6 row--center row__b-margin-untill-medium">
+                    <img src="assets/images/pic.jpg" alt="Faisal picture">
+                </div>
+                <!-- Content Column -->
+                <div class="row__medium-6 generic-content-container">
+                    <h3 class="headline headline--light">Hi,</h3>
+                    <p>I'm Faisal Ali, a front-end developer based in Mumbai, India.</p>
+                    <p>I specialize in converting the static design to fully responsive, interactive and optimized websites.</p>
+                    <a href="#" class="btn btn--t-margin">
+                        <span class="btn__text">More about me</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio">
-        <!-- Heading -->
-        <h2>Portfolio</h2>
-        <!-- Description -->
-        <p>All the projects mention below are just the practice projects. I have used my coding skills on them.</p>
+    <section class="page-section page-section--dark-green">
+        <div class="wrapper">
+            <!-- Heading -->
+            <h2 class="headline headline--center headline--light-color">Portfolio</h2>
+            <!-- Description -->
+            <p class="headline headline--center headline--small headline--light-color headline--narrow">All the projects mention below are just the practice projects. I have used my coding skills on them.</p>
 
-        <!-- Portfolio row -->
-        <div class="row">
-            <!-- Portfolio 1st image -->
-            <div class="row-medium-6">
-                <img src="#" alt="#">
+            <!-- Portfolio row -->
+            <div class="row">
+                <!-- Portfolio 1st image -->
+                <div class="row-medium-6">
+                    <img src="#" alt="#">
+                </div>
+
+                <!-- Portfolio 2nd image -->
+                <div class="row-medium-6">
+                    <img src="#" alt="#">
+                </div>
             </div>
 
-            <!-- Portfolio 2nd image -->
-            <div class="row-medium-6">
-                <img src="#" alt="#">
-            </div>
+            <a href="#">View More</a>
         </div>
-
-        <a href="#">View More</a>
     </section>
 
     <!-- Contact Section -->

@@ -6,4 +6,8 @@
 @import "./modules/_row";
 @import "./modules/_wrapper";
 @import "./modules/_btn";
+@import "./modules/_large-hero";
+@import "./modules/_page-section";
+@import "./modules/_headline";
+@import "./modules/_generic-content-container";
 @import "./modules/_footer-section";

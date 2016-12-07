@@ -1,6 +1,9 @@
 .wrapper{
-    padding: 0 18px;
+    padding: 0 10px;
     max-width: 1236px;
     margin: 0 auto;
 
+    @mixin atSmall{
+        padding: 0 18px;
+    }
 }
