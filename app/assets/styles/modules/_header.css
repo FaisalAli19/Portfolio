@@ -1,0 +1,32 @@
+.header-section{
+    background: radial-gradient(center top, ellipse farthest-corner, #2CB0A6 0%, #006B6C 100%);
+    text-align: center;
+    position: relative;
+
+    &__logo--img{
+        width: 100px;
+        height: 100px;
+
+        @mixin atSmall{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    &__menu{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+
+        &--img{
+            width: 30px;
+            height: 30px;
+
+            @mixin atSmall{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

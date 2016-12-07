@@ -467,3 +467,44 @@ template {
 body{
     font-family: 'Lato', sans-serif;
 }
+
+.header-section{
+    background: -webkit-radial-gradient(center top, ellipse farthest-corner, #2CB0A6 0%, #006B6C 100%);
+    background: radial-gradient(center top, ellipse farthest-corner, #2CB0A6 0%, #006B6C 100%);
+    text-align: center;
+    position: relative;
+}
+
+.header-section__logo--img{
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 530px) {
+
+  .header-section__logo--img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.header-section__menu{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+}
+
+.header-section__menu--img{
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 530px) {
+
+  .header-section__menu--img {
+    width: 50px;
+    height: 50px;
+  }
+}
