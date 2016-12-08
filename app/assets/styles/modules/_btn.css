@@ -58,4 +58,8 @@
     &--margin{
         margin: 20px 0;
     }
+
+    &--margin-large{
+        margin: 30px 0 ;
+    }
 }

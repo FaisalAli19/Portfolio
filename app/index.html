@@ -83,62 +83,40 @@
             <!-- Heading -->
             <h2 class="headline headline--center headline--light-color">Portfolio</h2>
             <!-- Description -->
-            <p class="headline headline--center headline--small headline--light-color headline--narrow">All the projects mention below are just the practice projects. I have used my coding skills on them.</p>
+            <p class="headline headline--center headline--small headline--light-color headline--narrow headline--padding">All the projects mention below are just the practice projects. I have used my coding skills on them.</p>
 
-            <!-- Portfolio row -->
-            <div class="row row--padding portfolio-project">
+            <!-- Portfolio Projects -->
+            <div class="row row--padding row--center">
+                <!-- Project 1 -->
                 <div class="row__medium-6">
-                    <a href="#" target="_blank">
-                        <img class="portfolio-project__img" src="assets/images/travel-agency.jpg" alt="travel agency website">
-                    </a>
+                    <figure class="portfolio-project">
+                        <img src="assets/images/travel-agency.jpg" alt="travel agency website" class="portfolio-project__img">
+                        <figcaption class="portfolio-project__content">
+                            <h3 class="portfolio-project__title">Travel Agency</h3>
+                            <p class="portfolio-project__description">This is a practice project. While working
+                            on this project I was able to test my coding skills and learn some new skills.</p>
+                        </figcaption>
+                        <a href="#" class="portfolio-project__link"></a>
+                    </figure>
                 </div>
+
+                <!-- Project 2 -->
                 <div class="row__medium-6">
-                    <div class="portfolio-project__content portfolio-project__content--l-padding">
-                        <h3 class="portfolio-project__title">Travel Agency</h3>
-                        <p class="portfolio-project__desc">This is a demo travel agency website created for practice purpose only.</p>
-                        <p class="portfolio-project__heading">Skills used:</p>
-                        <ul>
-                            <li>Html5</li>
-                            <li>Css3</li>
-                            <li>PostCss</li>
-                            <li>Javascript</li>
-                            <li>Jquery</li>
-                            <li>Gulp</li>
-                            <li>Webpack</li>
-                            <li>Babel</li>
-                        </ul>
-                        <a href="#" class="btn">
-                            <span class="btn__text">Live View</span>
-                        </a>
-                    </div>
+                    <figure class="portfolio-project">
+                        <img src="assets/images/Pex.jpg" alt="pex website" class="portfolio-project__img">
+                        <figcaption class="portfolio-project__content">
+                            <h3 class="portfolio-project__title">Pex Portfolio</h3>
+                            <p class="portfolio-project__description">
+                                This is a practice project. While working
+                                on this project I was able to test my coding skills and learn some new skills.
+                            </p>
+                        </figcaption>
+                        <a href="#" class="portfolio-project__link"></a>
+                    </figure>
                 </div>
             </div>
 
-            <!-- Portfolio row -->
-            <div class="row row--padding portfolio-project">
-                <div class="row__medium-6">
-                    <div class="portfolio-project__content">
-                        <h3 class="portfolio-project__title">Pex</h3>
-                        <p class="portfolio-project__desc">This is a demo project created for practice purpose only.</p>
-                        <p class="portfolio-project__heading">Skills used:</p>
-                        <ul>
-                            <li>Html5</li>
-                            <li>Css3</li>
-                            <li>Javascript</li>
-                            <li>Jquery</li>
-                        </ul>
-                        <a href="#" class="btn">
-                            <span class="btn__text">Live View</span>
-                        </a>
-                    </div>
 
-                </div>
-                <div class="row__medium-6">
-                    <a href="#" target="_blank">
-                        <img src="assets/images/Pex.jpg" alt="Pex website">
-                    </a>
-                </div>
-            </div>
 
             <div class="btn--center btn--margin">
                 <a href="#" class="btn"><span class="btn__text">View More</span></a>
@@ -147,11 +125,11 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="page-section">
         <!-- Heading -->
-        <h2>Lets Work Together</h2>
+        <h2 class="headline headline--center">Lets Work Together</h2>
         <!-- Description -->
-        <p>Like my work  and interested in working together ? Get in touch so we can discuss your requirements.</p>
+        <p class="headline headline--center headline--small headline--dark headline--narrow">Like my work  and interested in working together ? Get in touch so we can discuss your requirements.</p>
 
         <!-- Social Links -->
         <div class="social">
@@ -161,7 +139,11 @@
                 <li><a href="#"><img src="assets/images/icons/linkedin.svg" alt="linkedin logo"></a></li>
             </ul>
         </div>
-        <a href="#">Get in Touch</a>
+        <div class="btn--center btn--margin-large">
+            <a href="#" class="btn">
+                <span class="btn__text">Get in Touch</span>
+            </a>
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -178,7 +160,9 @@
                     </ul>
 
                 <!-- Get in Touch button -->
-                    <a href="#" class="btn btn--left-margin">Get in Touch</a>
+                    <a href="#" class="btn">
+                        <span class="btn__text">Get in Touch</span>
+                    </a>
             </div>
 
             <!-- Copyright text -->

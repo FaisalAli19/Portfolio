@@ -1,45 +1,65 @@
 .portfolio-project{
+    position: relative;
     overflow: hidden;
+    min-width: 300px;
+    max-width: 500px;
+    width: 100%;
+    color: $White;
+    text-align: center;
+    background-color: $darkGreen;
+
+    & *{
+        transition: all .45s ease;
+    }
+
     &__img{
-        width: 600px;
-        height: 400px;
-        margin: 0 auto;
+        vertical-align: top;
+        max-width: 100%;
+        backface-visibility: hidden;
     }
 
     &__content{
-        color: $lightGreen;
-
-        ul{
-            margin: 10px 0;
-            padding: 0;
-        }
-
-        li{
-            list-style: none;
-            display: inline-block;
-            margin-right: 10px;
-            background-color: $darkGreen;
-            padding: 5px 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-        }
-    }
-
-    &__content--l-padding{
-        padding: 0 30px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        padding: 30px;
+        background-color: rgba($Black, .85);
+        transform: rotate(90deg);
+        transform-origin: 0 0%;
     }
 
     &__title{
+        line-height: 1.5em;
+        display: inline;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         font-size: 1.5rem;
+        padding: 10px;
     }
 
-    &__desc{
-        font-size: 1.2rem;
+    &__description{
+        line-height: 1.65;
         font-weight: 300;
+        padding: 20px 5px 15px;
+        font-size: 1.2rem;
     }
 
-    &__heading{
-        font-size: 1.2rem;
-        font-weight: 400;
+    &__link{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    &:hover > &__img{
+        opacity: 0.2;
+    }
+
+    &:hover &__content{
+        transform: rotate(0);
     }
 }

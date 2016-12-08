@@ -21,6 +21,10 @@
         text-align: center;
     }
 
+    &__left-until-small{
+        text-align: left;
+    }
+
     &__b-margin-untill-medium{
         margin-bottom: 1.5rem;
     }
