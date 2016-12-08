@@ -1,0 +1,45 @@
+.portfolio-project{
+    overflow: hidden;
+    &__img{
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    &__content{
+        color: $lightGreen;
+
+        ul{
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 10px;
+            background-color: $darkGreen;
+            padding: 5px 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+    }
+
+    &__content--l-padding{
+        padding: 0 30px;
+    }
+
+    &__title{
+        font-size: 1.5rem;
+    }
+
+    &__desc{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    &__heading{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
