@@ -9,8 +9,13 @@
     }
 
     &--small{
-        font-size: 1.25rem;
+        font-size: 1.08rem;
         padding: 20px;
+        color: $Black;
+
+        @mixin atSmall{
+            font-size: 1.25rem;
+        }
     }
 
     &--narrow{

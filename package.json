@@ -17,6 +17,7 @@
     "gulp-postcss": "^6.2.0",
     "gulp-svg-sprite": "^1.3.1",
     "gulp-watch": "^4.3.11",
+    "lost": "^7.1.1",
     "postcss-hexrgba": "^0.2.1",
     "postcss-import": "^9.0.0",
     "postcss-mixins": "^5.4.0",

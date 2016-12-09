@@ -48,7 +48,11 @@
     }
 
     &--t-margin{
-        margin-top: 20px;
+        margin-top: 0;
+
+        @mixin atMedium{
+            margin-top: 20px;
+        }
     }
 
     &--center{

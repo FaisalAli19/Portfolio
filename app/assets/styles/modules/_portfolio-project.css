@@ -1,12 +1,19 @@
 .portfolio-project{
     position: relative;
     overflow: hidden;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
     min-width: 300px;
     max-width: 500px;
     width: 100%;
     color: $White;
     text-align: center;
     background-color: $darkGreen;
+
+    @mixin atSmall{
+        display: inline-block;
+    }
 
     & *{
         transition: all .45s ease;
@@ -35,15 +42,23 @@
         line-height: 1.5em;
         display: inline;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 10px;
+
+        @mixin atSmall{
+            font-size: 1.5rem;
+        }
     }
 
     &__description{
         line-height: 1.65;
         font-weight: 300;
         padding: 20px 5px 15px;
-        font-size: 1.2rem;
+        font-size: .9rem;
+
+        @mixin atSmall{
+            font-size: 1.2rem;
+        }
     }
 
     &__link{

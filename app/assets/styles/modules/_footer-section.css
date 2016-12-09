@@ -1,60 +1,11 @@
 .footer-section{
-    background-color: $darkGreen;
-    color: $lightGreen;
-    padding: 10px 0;
-
-    &__content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 15px 0;
-        margin-bottom: 15px;
-
-        @mixin atSmall{
-            flex-direction: row;
-            justify-content: center;
-        }
-    }
-
-    &__menu{
-        padding: 0;
-        list-style: none;
-        text-align: center;
-
-        @mixin atMedium{
-            margin: 0;
-            padding: 0;
-        }
-
-        li{
-            margin-bottom: 15px;
-
-            @mixin atSmall{
-                display: inline-block;
-                margin-right: 10px;
-                margin-bottom: 0;
-            }
-        }
-
-        a{
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $lightGreen;
-            padding: 10px 5px;
-            font-size: 1.2rem;
-
-            @mixin atSmall{
-                font-size: 1rem;
-            }
-        }
-    }
 
     &__copyright{
+        color: $lightGreen;
         text-align: center;
-        font-size: .95rem;
-        &--no-margin{
-            margin: 0;
-        }
+    }
+
+    &__copyright--no-margin{
+        margin: 0;
     }
 }

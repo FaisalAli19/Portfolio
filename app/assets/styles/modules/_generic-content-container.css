@@ -1,9 +1,10 @@
 .generic-content-container{
     p{
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 1.05rem;
+        line-height: 1.65;
         padding: 0;
-        color: rgba($Black, .87);
+        color: rgba($Black, 1);
 
         @mixin atSmall{
             font-size: 1.5rem;
