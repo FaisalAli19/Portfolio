@@ -19,16 +19,31 @@
 </head>
 <body>
     <!-- Navigation Section -->
-    <nav class="header-section">
-            <!-- Fa Logo -->
-            <div class="header-section__logo">
-                <h1>Faisal Ali</h1>
-            </div>
-            <!-- Menu Icon -->
-            <div class="header-section__menu">
-                <img class="header-section__menu--img" src="assets/images/icons/Menu-bars.svg" alt="Menu bars">
-            </div>
+    <header>
+        <!-- Navbar-->
+        <nav class="header-section">
+            <div class="wrapper">
+                <!-- Fa Logo -->
+                <div class="header-section__logo">
+                    <a href="#"><img src="assets/images/icons/fa-logo.svg" alt="logo image"></a>
+                </div>
+                <!-- Menu Icon -->
+                <div class="header-section__menu-icon">
+                    <div class="header-section__menu-icon__middle"></div>
+                </div>
+           </div>
         </nav>
+        <!-- Menu Content
+        <div class="header-section__menu-content">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+        </div>-->
+    </header>
+
 
     <!-- Large Hero Section -->
     <section class="large-hero">
@@ -38,7 +53,7 @@
                 <source srcset="assets/images/hero--large.jpg 1920w">
                 <source srcset="assets/images/hero--medium.jpg 1380w">
                 <source srcset="assets/images/hero--small.jpg 990w">
-                <img src="assets/images/hero--smaller.jpg 640w" alt="Desk image">
+                <img srcset="assets/images/hero--smaller.jpg 640w" alt="Desk image">
             </picture>
         </div>
         <!-- Hero Title -->
@@ -88,7 +103,12 @@
                 <!-- Project 1 -->
                 <div class="row__medium-6 row--center">
                     <figure class="portfolio-project">
-                        <img src="assets/images/travel-agency.jpg" alt="travel agency website" class="portfolio-project__img">
+                        <picture>
+                            <source srcset="assets/images/travel-agency--large.jpg 1366w">
+                            <source srcset="assets/images/travel-agency--medium.jpg 990w">
+                            <img srcset="assets/images/travel-agency--small.jpg 640w" alt="travel agency website" class="portfolio-project__img">
+                        </picture>
+
                         <figcaption class="portfolio-project__content">
                             <h3 class="portfolio-project__title">Travel Agency</h3>
                             <p class="portfolio-project__description">This is a practice project. While working
@@ -101,7 +121,11 @@
                 <!-- Project 2 -->
                 <div class="row__medium-6 row--center">
                     <figure class="portfolio-project">
-                        <img src="assets/images/Pex.jpg" alt="pex website" class="portfolio-project__img">
+                        <picture>
+                            <source srcset="assets/images/Pex--large.jpg 990w">
+                            <source srcset="assets/images/Pex--medium.jpg 990w">
+                            <img srcset="assets/images/Pex--small.jpg 640w" alt="pex website" class="portfolio-project__img">
+                        </picture>
                         <figcaption class="portfolio-project__content">
                             <h3 class="portfolio-project__title">Pex Portfolio</h3>
                             <p class="portfolio-project__description">

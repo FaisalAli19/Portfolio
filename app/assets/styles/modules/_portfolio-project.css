@@ -6,17 +6,19 @@
     margin-right: 0;
     min-width: 300px;
     max-width: 500px;
-    width: 100%;
+
     color: $White;
     text-align: center;
     background-color: $darkGreen;
 
     @mixin atSmall{
         display: inline-block;
+        width: 500px;
+        height: 300px;
     }
 
     & *{
-        transition: all .45s ease;
+        transition: all .75s ease;
     }
 
     &__img{
@@ -70,8 +72,10 @@
         z-index: 1;
     }
 
-    &:hover > &__img{
-        opacity: 0.2;
+    &:hover  &__img{
+        opacity: 0.6;
+        transform: scale(1.2);
+
     }
 
     &:hover &__content{
