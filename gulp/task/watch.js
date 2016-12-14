@@ -20,10 +20,20 @@ gulp.task("watch", function() {
     watch("./app/assets/styles/**/*.css", function() {
         gulp.start("cssInject");
     });
+
+    //This will watch for changes in script folder
+    watch("./app/assets/scripts/**/*.js", function() {
+        gulp.start("scriptsRefresh");
+    });
 });
 
 //This function will inject the css in browser with out reloading the page
 gulp.task("cssInject", ["styles"], function() {
     return gulp.src("./app/temp/styles/styles.css")
         .pipe(browserSync.stream());
+});
+
+//This function will insert the changes to web browser and reload the same
+gulp.task("scriptsRefresh", ["scripts"], function() {
+    browserSync.reload();
 });
