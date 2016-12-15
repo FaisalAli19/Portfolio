@@ -1,7 +1,7 @@
 .social{
     text-align: center;
 
-    ul{
+    &--no-margin-padding{
         margin: 0;
         padding: 0;
     }
@@ -11,21 +11,38 @@
         display: inline-block;
         width: 50px;
         height: 50px;
-        margin-right: 20px;
-        background-color: rgba($Black, .75);
+        background-color: #000;
+        margin: 10px 0;
         position: relative;
         border-radius: 50%;
-        transition: all .3s ease;
+        transition: all .45s ease;
+
+        @mixin atSmall{
+            width: 60px;
+            height: 60px;
+        }
     }
 
-    a{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    li:not(:last-child){
+        margin-right: 25px;
     }
 
     img{
-        width: 30px;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @mixin atSmall{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    li:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
     }
 }
