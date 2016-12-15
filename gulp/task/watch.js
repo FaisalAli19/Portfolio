@@ -12,7 +12,12 @@ gulp.task("watch", function() {
     });
 
     //This will watch for changes in index files
-    watch("./app/index.html", function() {
+    watch("./app/index.html, ./app/assets/pages/*.html", function() {
+        browserSync.reload();
+    });
+
+    //This will watch for changes in pages folder
+    watch("./app/assets/pages/*.html", function() {
         browserSync.reload();
     });
 
