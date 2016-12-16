@@ -1,0 +1,54 @@
+.skills{
+    display: flex;
+    align-items: center;
+
+    &__img{
+        background-color: $darkGreen;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 0 20px 0 20px;
+        margin-right: 10px;
+
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__title{
+        font-weight: 300;
+        font-size: 2rem;
+        color: rgba($Black, .74);
+    }
+
+    &__subtitle{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 10px 30px;
+        color: rgba($Black, .74);
+    }
+
+    &__skills-container{
+        padding-left: 45px;
+
+        li{
+            font-size: 1.2rem;
+            color: rgba($Black, .74);
+            padding: 5px 0;
+        }
+    }
+
+    &--flex{
+        display: flex;
+    }
+
+    &--l-margin{
+        margin-left: 120px;
+    }
+
+}

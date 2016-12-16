@@ -48,4 +48,41 @@
     &--dark{
         color: $darkGreen;
     }
+
+    &--medium{
+        font-size: 2.3rem;
+    }
+
+    &__title{
+        font-size: 2.3rem;
+        padding: 15px 0 0 5px;
+        color: rgba($Black, .45);
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    &__subtitle{
+        font-size: 1.5rem;
+        padding: 0 10px 0 5px;
+        color: rgba($Black, .87);
+        font-weight: 300;
+        line-height: 1.25;
+
+        strong{
+            color: rgba($Black, .74);
+            font-style: oblique;
+        }
+    }
+
+    &__subtitle--narrow{
+        width: 100%;
+
+        @mixin atMedium{
+            width: 70%;
+        }
+    }
+
+    &__subtitle--no-t-margin{
+        margin-top: 0;
+    }
 }

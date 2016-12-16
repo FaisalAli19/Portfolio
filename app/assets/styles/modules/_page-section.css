@@ -4,4 +4,12 @@
     &--dark-green{
         background-color: rgba($darkGreen, .8);
     }
+
+    &--no-t-padding{
+        padding-top: 0;
+    }
+
+    &--no-b-padding{
+        padding-bottom: 0;
+    }
 }

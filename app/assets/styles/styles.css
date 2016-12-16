@@ -12,4 +12,6 @@
 @import "./modules/_generic-content-container";
 @import "./modules/_portfolio-project";
 @import "./modules/_social";
+@import "./modules/_skills";
+@import "./modules/_services";
 @import "./modules/_footer-section";
