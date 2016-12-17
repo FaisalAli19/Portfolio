@@ -7,14 +7,18 @@
     }
 
     &--padding{
-        padding: 20px 0;
+        padding: 10px 0;
+
+        @mixin atMedium{
+            padding: 20px 0;
+        }
     }
 
     li{
         list-style: none;
         display: inline-block;
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         background-color: $darkGreen;
         margin: 10px 0;
         position: relative;
@@ -28,7 +32,11 @@
     }
 
     li:not(:last-child){
-        margin-right: 25px;
+        margin-right: 10px;
+
+        @mixin atSmall{
+            margin-right: 25px;
+        }
     }
 
     img{

@@ -1,6 +1,12 @@
 .skills{
     display: flex;
     align-items: center;
+    padding-left: 10px;
+
+    @mixin atMedium{
+        padding-left: 0;
+    }
+
 
     &__img{
         background-color: $darkGreen;
@@ -45,10 +51,34 @@
 
     &--flex{
         display: flex;
+        flex-direction: column;
+
+        @mixin atMedium{
+            flex-direction: row;
+        }
     }
 
     &--l-margin{
-        margin-left: 120px;
+        margin-left: 0;
+
+        @mixin atMedium{
+            margin-left: 120px;
+        }
     }
 
+    &--no-t-margin-untill-medium{
+        margin-top: 0;
+
+        @mixin atMedium{
+            margin-top: 16px;
+        }
+    }
+
+    &--no-b-margin-untill-medium{
+        margin-bottom: 0;
+
+        @mixin atMedium{
+            margin-bottom: 16px;
+        }
+    }
 }

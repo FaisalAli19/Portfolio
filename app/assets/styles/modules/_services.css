@@ -22,13 +22,29 @@
     &__title{
         font-size: 1.8rem;
         color: $lightGreen;
-        margin-bottom: 10px;
+        margin: 10px 0;
+
+        @mixin atMedium{
+            margin: 20px 0;
+        }
     }
 
     &__subtitle{
         font-size: 1.2rem;
         font-weight: 300;
         color: $lightGreen;
-        padding: 0 10px;
+        padding: 0;
+
+        @mixin atSmall{
+            padding: 0 10px;
+        }
+    }
+
+    &__subtitle--no-margin-untill-medium{
+        margin: 0;
+
+        @mixin atMedium{
+            margin: 19.2px 0;
+        }
     }
 }

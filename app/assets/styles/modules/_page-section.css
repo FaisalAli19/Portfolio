@@ -12,4 +12,12 @@
     &--no-b-padding{
         padding-bottom: 0;
     }
+
+    &--no-b-padding-untill-medium{
+        padding-bottom: 0;
+
+        @mixin atMedium{
+            padding-bottom: 20px;
+        }
+    }
 }
