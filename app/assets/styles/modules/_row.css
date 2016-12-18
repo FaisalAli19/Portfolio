@@ -34,7 +34,7 @@
     }
 
     &--center{
-
+        text-align: left;
 
         @mixin atSmall{
             text-align: center;
@@ -97,7 +97,11 @@
     }
 
     &--padding-medium{
-        padding: 20px 0;
+        padding: 0;
+
+        @mixin atMedium{
+            padding: 20px 0;
+        }
     }
 
     &--t-margin-untill-medium{
