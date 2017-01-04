@@ -22,7 +22,11 @@
     }
 
     &--large-t-padding{
-        padding-top: 60px;
+        padding-top: 10px;
+
+        @mixin atMedium{
+            padding-top: 60px;
+        }
     }
 
     &--b-border{

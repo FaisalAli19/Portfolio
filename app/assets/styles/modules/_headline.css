@@ -95,6 +95,22 @@
         }
     }
 
+    &__subtitle--smaller{
+        font-size: 1.15rem;
+
+        @mixin atSmall{
+            font-size: 1.5rem;
+        }
+    }
+
+    &__subtitle--no-l-r-padding-untill-medium{
+        padding: 0;
+
+        @mixin atSmall{
+            padding: 0 10px 0 5px;
+        }
+    }
+
     &__subtitle--narrow{
         width: 100%;
 
@@ -124,5 +140,9 @@
 
     &__subtitle-padding-b{
         padding-bottom: 15px;
+    }
+
+    &__subtitle-padding-b--large{
+        padding-bottom: 25px;
     }
 }
