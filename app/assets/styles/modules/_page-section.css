@@ -20,4 +20,12 @@
             padding-bottom: 20px;
         }
     }
+
+    &--large-t-padding{
+        padding-top: 60px;
+    }
+
+    &--b-border{
+        border-bottom: 12px solid $darkGreen;
+    }
 }

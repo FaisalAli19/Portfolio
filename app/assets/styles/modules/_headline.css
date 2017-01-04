@@ -103,6 +103,10 @@
         }
     }
 
+    &__subtitle--center{
+        margin: auto;
+    }
+
     &__subtitle--no-t-margin{
         margin-top: 0;
     }
@@ -116,5 +120,9 @@
 
     &--b-margin-untill-medium{
         margin-bottom: 25px;
+    }
+
+    &__subtitle-padding-b{
+        padding-bottom: 15px;
     }
 }

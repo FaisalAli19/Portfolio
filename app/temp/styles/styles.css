@@ -1109,6 +1109,14 @@ img{
   }
 }
 
+.page-section--large-t-padding{
+  padding-top: 60px;
+}
+
+.page-section--b-border{
+  border-bottom: 12px solid #006b6c;
+}
+
 .headline{
     font-size: 2rem;
     font-weight: 300;
@@ -1236,6 +1244,10 @@ img{
   }
 }
 
+.headline__subtitle--center{
+  margin: auto;
+}
+
 .headline__subtitle--no-t-margin{
   margin-top: 0;
 }
@@ -1249,6 +1261,10 @@ img{
 
 .headline--b-margin-untill-medium{
   margin-bottom: 25px;
+}
+
+.headline__subtitle-padding-b{
+  padding-bottom: 15px;
 }
 
 .generic-content-container p{
