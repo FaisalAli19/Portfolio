@@ -66,4 +66,16 @@
     &--margin-large{
         margin: 30px 0 ;
     }
+
+    &--margin-b-large{
+        margin-bottom: 30px;
+    }
+
+    &--center-untill-medium{
+        text-align: center;
+
+        @mixin atMedium{
+            text-align: left;
+        }
+    }
 }

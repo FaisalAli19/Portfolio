@@ -78,6 +78,18 @@
         }
     }
 
+    &__content{
+        color: rgba($Black, .65);
+        font-weight: 300;
+        font-size: 1.8rem;
+        padding: 20px 5px;
+        line-height: 35px;
+
+        strong{
+            color: $darkGreen;
+        }
+    }
+
     &__subtitle{
         font-size: 1.2rem;
         padding: 0 10px 0 5px;
