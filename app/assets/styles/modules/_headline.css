@@ -29,6 +29,26 @@
         padding: 20px 0;
     }
 
+    &--padding-top{
+        padding-top: 20px;
+    }
+
+    &--padding-bottom{
+        padding-bottom: 20px;
+    }
+
+    &--padding-bottom-until-medium{
+        padding-bottom: 15px;
+
+        @mixin atMedium{
+            padding-bottom: 0;
+        }
+    }
+
+    &--no-padding{
+        padding: 0;
+    }
+
     &--center{
         text-align: center;
     }
@@ -50,7 +70,12 @@
     }
 
     &--large{
-        font-size: 4rem;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+
+        @mixin atMedium{
+            font-size: 4rem;
+        }
     }
 
     &--dark{
@@ -84,6 +109,17 @@
         font-size: 1.8rem;
         padding: 20px 5px;
         line-height: 35px;
+    }
+
+    &__intro{
+        color: rgba($Black, .65);
+        font-weight: 300;
+        font-size: 1.35rem;
+        padding-left: 5px;
+
+        @mixin atMedium{
+            font-size: 1.8rem;
+        }
 
         strong{
             color: $darkGreen;

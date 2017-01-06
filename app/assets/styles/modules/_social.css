@@ -63,7 +63,12 @@
         cursor: pointer;
     }
 
-    &--left{
-        text-align: left;
+    &--left-until-medium{
+        text-align: center;
+
+        @mixin atMedium{
+            text-align: left;
+        }
     }
+
 }

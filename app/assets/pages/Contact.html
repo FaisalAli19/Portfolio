@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../../temp/styles/styles.css">
 </head>
 <body>
+    <div class="content">
     <!-- Navigation Section -->
     <header>
         <!-- Navbar-->
@@ -50,14 +51,15 @@
     <section class="page-section page-section--large-t-padding">
         <div class="wrapper">
             <!-- Heading -->
-            <h2 class="headline">Contact</h2>
+            <h2 class="headline headline--center-until-medium headline--padding-top headline--large">Contact</h2>
             <!-- Description -->
-            <p class="headline headline__content">
-                Have a project in mind, and think I can help you with it? <br>
+            <p class="headline headline__intro headline--padding-top headline--padding-bottom-until-medium headline--center-until-medium">
+                Have a project in mind, and think I can help you with it? </p>
+            <p class="headline headline__intro headline--padding-bottom headline--center-until-medium">
                 Feel free to contact me using below form or email me at <strong>admin@faisal-ali.com</strong>.
             </p>
             <!-- Social Links -->
-            <div class="social social--left">
+            <div class="social social--left-until-medium">
                 <ul class="social--no-margin-padding social--small-padding">
                     <li><a href="#"><img src="../images/icons/facebook.svg" alt="facebook logo"></a></li>
                     <li><a href="#"><img src="../images/icons/twitter.svg" alt="twitter logo"></a></li>
@@ -68,22 +70,31 @@
             <!-- Contact Form -->
             <div class="form">
                 <form action="">
-                    <input  type="text" name="Name" placeholder="Name">
-                    <input  type="text" name="Email" placeholder="Email">
-                    <textarea name="Message" placeholder="Message"></textarea>
+                    <input id="Name" type="text" name="Name" placeholder="Name" required>
+                    <input id="Email" type="text" name="Email" placeholder="Email" required>
+                    <textarea id="Message" name="Message" placeholder="Message" required></textarea>
                 </form>
             </div>
 
-            <!-- Button -->
-            <div class="btn--center-untill-medium btn--margin-b-large">
-                <a href="Contact.html" class="btn">
-                    <span class="btn__text">Send</span>
-                </a>
+            <div class="form__content">
+                <!-- Button -->
+                <div class="button">
+                    <a href="Contact.html" class="btn">
+                        <span class="btn__text">Send</span>
+                    </a>
+                </div>
+
+                <!-- Message -->
+                <div class="form__messages">
+                    <p class="form__messages--success form__messages--hide">E-mail sent! I'll get back to you soon.</p>
+                    <p class="form__messages--error form__messages--hide">Oops, something went wrong. Please try again.</p>
+                </div>
+
             </div>
 
         </div>
     </section>
-
+    </div>
     <!-- Footer Section -->
     <footer class="footer-section page-section page-section--dark-green">
         <div class="wrapper">

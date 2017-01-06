@@ -1,8 +1,15 @@
 /*---------Global Css Start Here -----------*/
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     background-color: $bgColor;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 *{
@@ -12,4 +19,8 @@ body{
 img{
     max-width: 100%;
     height: auto;
+}
+
+.content{
+    flex: 1;
 }
