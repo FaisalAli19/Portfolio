@@ -1776,7 +1776,7 @@ img{
     padding: 30px 0;
 }
 
-.form input{
+.form__input{
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(0,0,0, .25);
@@ -1788,23 +1788,28 @@ img{
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*&:valid{
-            border-bottom: 2px solid rgba($darkGreen, .67);
-        }
-
-        &:invalid,
-        &:required{
-            border-bottom: 2px solid $darkRed;
-        }*/
+.form__input:focus{
+  outline: none;
+  border-color: rgba(0,0,0, .65);
+}
 
 @media (min-width: 800px) {
 
-  .form input {
+  .form__input {
     width: 60%;
   }
 }
 
-.form textarea{
+.form__input--valid{
+  border-color: rgba(0,107,108, .67);
+}
+
+.form__input--invalid,
+    .form__input--required{
+  border-bottom: 2px solid #e81919;
+}
+
+.form__textarea{
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(0,0,0, .25);
@@ -1818,26 +1823,16 @@ img{
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*&:valid{
-            border-bottom: 2px solid rgba($darkGreen, .67);
-        }
-
-        &:invalid,
-        &:required{
-            border-bottom: 2px solid $darkRed;
-        }*/
+.form__textarea:focus{
+  outline: none;
+  border-color: rgba(0,0,0, .65);
+}
 
 @media (min-width: 800px) {
 
-  .form textarea {
+  .form__textarea {
     width: 60%;
   }
-}
-
-.form input:focus,
-    .form textarea:focus{
-  outline: none;
-  border-color: rgba(0,0,0, .65);
 }
 
 .form__content{
