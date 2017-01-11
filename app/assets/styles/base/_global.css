@@ -24,3 +24,13 @@ img{
 .content{
     flex: 1;
 }
+
+button{
+    border-width: 1px;
+    border-color: rgba($darkGreen, .2);
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}

@@ -69,29 +69,30 @@
 
             <!-- Contact Form -->
             <div class="form">
-                <form action="" method="post">
+                <form id="contact-form" action="" method="post">
                     <input class="form__input" id="Name"  type="text" name="Name" placeholder="Name" required>
                     <input  class="form__input" id="Email" type="text" name="Email" placeholder="Email" required>
                     <textarea class="form__textarea"  id="Message" name="Message" placeholder="Message" required></textarea>
+
+
+
+                    <div class="form__content">
+                        <!-- Button -->
+                        <div class="button">
+                            <a href="#" class="btn" id="submit">
+                                <span class="btn__text">Send</span>
+                            </a>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form__messages">
+                            <p class="form__messages--success form__messages--hide">E-mail sent! I'll get back to you soon.</p>
+                            <p class="form__messages--error form__messages--hide">Oops, something went wrong. Please try again.</p>
+                        </div>
+
+                    </div>
                 </form>
             </div>
-
-            <div class="form__content">
-                <!-- Button -->
-                <div class="button">
-                    <a href="Contact.html" class="btn" onsubmit="return validation()">
-                        <span class="btn__text">Send</span>
-                    </a>
-                </div>
-
-                <!-- Message -->
-                <div class="form__messages">
-                    <p class="form__messages--success form__messages--hide">E-mail sent! I'll get back to you soon.</p>
-                    <p class="form__messages--error form__messages--hide">Oops, something went wrong. Please try again.</p>
-                </div>
-
-            </div>
-
         </div>
     </section>
     </div>

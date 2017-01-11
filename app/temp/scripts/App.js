@@ -50,9 +50,14 @@
 
 	var _menuReveal2 = _interopRequireDefault(_menuReveal);
 
+	var _validation = __webpack_require__(3);
+
+	var _validation2 = _interopRequireDefault(_validation);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var menuReveal = new _menuReveal2.default();
+	var formValidation = new _validation2.default();
 
 /***/ },
 /* 1 */
@@ -10326,6 +10331,140 @@
 	return jQuery;
 	} );
 
+
+/***/ },
+/* 3 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(2);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var FormValidation = function () {
+	    function FormValidation() {
+	        _classCallCheck(this, FormValidation);
+
+	        this.contactForm = (0, _jquery2.default)("#contact-form");
+	        this.inputName = (0, _jquery2.default)("#Name");
+	        this.inputEmail = (0, _jquery2.default)("#Email");
+	        this.inputMessage = (0, _jquery2.default)("#Message");
+	        this.inputNameVal = (0, _jquery2.default)("#Name").val();
+	        this.inputEmailVal = (0, _jquery2.default)("#Email").val();
+	        this.inputMessageVal = (0, _jquery2.default)("#Message").val();
+	        this.submitButton = (0, _jquery2.default)("form #submit");
+	        this.nameRegEx = /^[a-zA-Z]+$/;
+	        this.emailRegEx = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	        this.events();
+	    }
+
+	    _createClass(FormValidation, [{
+	        key: "events",
+	        value: function events() {
+	            this.submitButton.click(this.validate.bind(this));
+	        }
+	        //Validate all the fields by run the individual function
+
+	    }, {
+	        key: "validate",
+	        value: function validate() {
+	            this.validateName();
+	            this.validateEmail();
+	            this.ValidateMessage();
+	        }
+	        //Check Name Input Field
+
+	    }, {
+	        key: "validateName",
+	        value: function validateName() {
+	            //Check the length of the Name input
+	            if (this.inputNameVal.length > 0) {
+	                //Check for valid name
+	                if (this.inputNameVal == this.nameRegEx) {
+	                    this.inputName.addClass("form__input--valid");
+	                    return false;
+	                }
+	                //if name has invalid character or number then add invalid class to input
+	                else {
+	                        this.inputName.addClass("form__input--invalid");
+	                        return false;
+	                    }
+	            }
+	            //If input is empty add required class to Name input
+	            else {
+	                    this.inputName.addClass("form__input--required");
+	                    return false;
+	                }
+	        }
+
+	        //Check Email Input Field
+
+	    }, {
+	        key: "validateEmail",
+	        value: function validateEmail() {
+
+	            //Check the length of the Email input
+	            if (this.inputEmailVal.length > 0) {
+	                //Check for valid Email
+	                if (this.inputEmailVal == this.emailRegEx) {
+	                    this.inputEmail.addClass("form__input--valid");
+	                    return false;
+	                }
+	                //if Email is invalid then add invalid class to input
+	                else {
+	                        this.inputEmail.addClass("form__input--invalid");
+	                        return false;
+	                    }
+	            }
+	            //If input is empty add required class to Email input
+	            else {
+	                    this.inputEmail.addClass("form__input--required");
+	                    return false;
+	                }
+	        }
+
+	        //Check Message Filed
+
+	    }, {
+	        key: "ValidateMessage",
+	        value: function ValidateMessage() {
+	            //Check for minimum length
+	            if (this.inputMessageVal.length > 0) {
+
+	                //if length is greater than 10 then add valid class
+	                if (this.inputMessageVal.length > 10) {
+	                    this.inputMessage.addClass("form__textarea--valid");
+	                    return false;
+	                }
+	                //if length is less than 10 then add invalid class
+	                else {
+	                        this.inputMessage.addClass("form__textarea--invalid");
+	                        return false;
+	                    }
+	            }
+	            //if the message is below minimum length display required state
+	            else {
+	                    this.inputMessage.addClass("form__textarea--required");
+	                    return false;
+	                }
+	        }
+	    }]);
+
+	    return FormValidation;
+	}();
+
+	exports.default = FormValidation;
 
 /***/ }
 /******/ ]);

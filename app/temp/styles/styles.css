@@ -496,6 +496,16 @@ img{
             flex: 1;
 }
 
+button{
+    border-width: 1px;
+    border-color: rgba(0,107,108, .2);
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
 .header-section{
     background-color: #006b6c;
     text-align: center;
@@ -1801,7 +1811,7 @@ img{
 }
 
 .form__input--valid{
-  border-color: rgba(0,107,108, .67);
+  border-bottom: 2px solid rgba(0,107,108, .67);
 }
 
 .form__input--invalid,
@@ -1833,6 +1843,15 @@ img{
   .form__textarea {
     width: 60%;
   }
+}
+
+.form__textarea--valid{
+  border-bottom: 2px solid rgba(0,107,108, .67);
+}
+
+.form__textarea--invalid,
+    .form__textarea--required{
+  border-bottom: 2px solid #e81919;
 }
 
 .form__content{

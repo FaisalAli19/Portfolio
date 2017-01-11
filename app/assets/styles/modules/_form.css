@@ -22,7 +22,7 @@
     }
 
     &__input--valid{
-        border-color: rgba($darkGreen, .67);
+        border-bottom: 2px solid rgba($darkGreen, .67);
     }
 
     &__input--invalid,
@@ -50,6 +50,15 @@
         @mixin atMedium{
             width: 60%;
         }
+    }
+
+    &__textarea--valid{
+        border-bottom: 2px solid rgba($darkGreen, .67);
+    }
+
+    &__textarea--invalid,
+    &__textarea--required{
+        border-bottom: 2px solid $darkRed;
     }
 
     &__content{
