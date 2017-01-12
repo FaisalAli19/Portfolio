@@ -25,8 +25,10 @@ class FormValidation {
         //Check if all are Validated
         if(this.nameValid() && this.emailValid() && this.messageValid()){
             //if validated display success message and send messageValid
+            this.sendMail();
             this.errorMessage.addClass("form__messages--hide");
             this.successMessage.removeClass("form__messages--hide");
+            this.inputReset();
             return false;
         }
         else {
@@ -131,6 +133,27 @@ class FormValidation {
                 return false;
             }
         }
+    }
+    //Ajax function for sending email
+    sendMail(){
+        $.ajax({
+            url: "https://www.enformed.io/2w0cexgu",
+            type: "POST",
+            data: {
+                Name: this.nameInput.val(),
+                Email: this.emailInput.val(),
+                Message: this.messageInput.val()
+            },
+            dataType: "json",
+            cache: false
+        });
+    }
+
+    //Reset values on input
+    inputReset(){
+        this.nameInput.val("");
+        this.emailInput.val("");
+        this.messageInput.val("");
     }
 }
 
