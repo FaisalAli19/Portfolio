@@ -38,6 +38,7 @@
         transform: translateY(-50%);
         width: 35px;
         height: 24px;
+        animation-delay: .8s;
 
         @mixin atMedium{
             width: 40px;

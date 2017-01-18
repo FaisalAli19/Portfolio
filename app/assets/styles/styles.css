@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "animate.css";
 @import "./base/_variables";
 @import "./base/_mixins";
 @import "./base/_global";
@@ -17,3 +18,4 @@
 @import "./modules/_form";
 @import "./modules/_footer-section";
 @import "./modules/_sprite";
+@import "./modules/_reveal-item";
