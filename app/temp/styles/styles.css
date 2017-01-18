@@ -533,14 +533,14 @@ button:focus{
   border-radius: 50%;
 }
 
-.header-section__logo img{
+.header-section__logo--img{
   width: 80px;
   height: 80px;
 }
 
 @media (min-width: 800px) {
 
-  .header-section__logo img {
+  .header-section__logo--img {
     width: 150px;
     height: 150px;
   }
@@ -1573,7 +1573,7 @@ button:focus{
   }
 }
 
-.social img{
+.social__img{
   width: 25px;
   height: 25px;
   position: absolute;
@@ -1585,7 +1585,7 @@ button:focus{
 
 @media (min-width: 530px) {
 
-  .social img {
+  .social__img {
     width: 30px;
     height: 30px;
   }
@@ -1628,21 +1628,19 @@ button:focus{
 
 .skills__img{
   background-color: #006b6c;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   position: relative;
   border-radius: 0 20px 0 20px;
   margin-right: 10px;
 }
 
-.skills__img img{
+.skills__img--img{
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
 }
 
 .skills__title{
@@ -1727,16 +1725,14 @@ button:focus{
 
 .services__img{
   background-color: #006b6c;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   position: relative;
   margin: 0 auto;
   border-radius: 0 20px 0 20px;
 }
 
-.services__img img{
-  width: 40px;
-  height: 40px;
+.services__img--img{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1889,3 +1885,69 @@ button:focus{
 .footer-section__copyright--no-margin{
   margin: 0;
 }
+
+/*Do not edit _sprite file insist edit gulp template sprite file*/
+
+.icon {
+        background-image: url("/assets/images/sprites/sprite-77987d2e.svg");
+    }
+
+.icon--Brush {
+        width: 32px;
+        height: 32px;
+        background-position: 0 0;
+    }
+
+.icon--Codepen {
+        width: 32px;
+        height: 32px;
+        background-position: 36.36363636363637% 0;
+    }
+
+.icon--Github {
+        width: 32px;
+        height: 32px;
+        background-position: 0 50%;
+    }
+
+.icon--Tool {
+        width: 32px;
+        height: 32px;
+        background-position: 36.36363636363637% 50%;
+    }
+
+.icon--bug {
+        width: 23.4px;
+        height: 23.2px;
+        background-position: 99.37888198757764% 0;
+    }
+
+.icon--code {
+        width: 32px;
+        height: 27.87px;
+        background-position: 72.72727272727273% 0;
+    }
+
+.icon--facebook {
+        width: 32px;
+        height: 32px;
+        background-position: 72.72727272727273% 43.546875%;
+    }
+
+.icon--linkedin {
+        width: 32px;
+        height: 32px;
+        background-position: 0 100%;
+    }
+
+.icon--psd2html {
+        width: 27.79px;
+        height: 32px;
+        background-position: 34.703394425767264% 100%;
+    }
+
+.icon--twitter {
+        width: 32px;
+        height: 32px;
+        background-position: 67.94318181818181% 100%;
+    }

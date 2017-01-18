@@ -1,0 +1,65 @@
+/*Do not edit _sprite file insist edit gulp template sprite file*/
+
+    .icon {
+        background-image: url("/assets/images/sprites/sprite-77987d2e.svg");
+    }
+
+    .icon--Brush {
+        width: 32px;
+        height: 32px;
+        background-position: 0 0;
+    }
+
+    .icon--Codepen {
+        width: 32px;
+        height: 32px;
+        background-position: 36.36363636363637% 0;
+    }
+
+    .icon--Github {
+        width: 32px;
+        height: 32px;
+        background-position: 0 50%;
+    }
+
+    .icon--Tool {
+        width: 32px;
+        height: 32px;
+        background-position: 36.36363636363637% 50%;
+    }
+
+    .icon--bug {
+        width: 23.4px;
+        height: 23.2px;
+        background-position: 99.37888198757764% 0;
+    }
+
+    .icon--code {
+        width: 32px;
+        height: 27.87px;
+        background-position: 72.72727272727273% 0;
+    }
+
+    .icon--facebook {
+        width: 32px;
+        height: 32px;
+        background-position: 72.72727272727273% 43.546875%;
+    }
+
+    .icon--linkedin {
+        width: 32px;
+        height: 32px;
+        background-position: 0 100%;
+    }
+
+    .icon--psd2html {
+        width: 27.79px;
+        height: 32px;
+        background-position: 34.703394425767264% 100%;
+    }
+
+    .icon--twitter {
+        width: 32px;
+        height: 32px;
+        background-position: 67.94318181818181% 100%;
+    }

@@ -19,7 +19,7 @@
         z-index: 6;
         border-radius: 50%;
 
-        img{
+        &--img{
             width: 80px;
             height: 80px;
 

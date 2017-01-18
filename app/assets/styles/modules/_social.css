@@ -44,7 +44,7 @@
         }
     }
 
-    img{
+    &__img{
         width: 25px;
         height: 25px;
         position: absolute;
