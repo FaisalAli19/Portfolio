@@ -1544,8 +1544,8 @@ button:focus{
 .social li{
   list-style: none;
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   background-color: #006b6c;
   margin: 10px 0;
   position: relative;
@@ -1563,7 +1563,7 @@ button:focus{
 }
 
 .social li:not(:last-child){
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 @media (min-width: 530px) {
@@ -1574,21 +1574,11 @@ button:focus{
 }
 
 .social__img{
-  width: 25px;
-  height: 25px;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-@media (min-width: 530px) {
-
-  .social__img {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 .social li:hover{

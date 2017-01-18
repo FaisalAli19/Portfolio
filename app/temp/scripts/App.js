@@ -10505,7 +10505,7 @@
 	        key: "sendMail",
 	        value: function sendMail() {
 	            _jquery2.default.ajax({
-	                url: "https://www.enformed.io/2w0cexgu",
+	                url: "https://formspree.io/contact@faisal-ali.com",
 	                type: "POST",
 	                data: {
 	                    Name: this.nameInput.val(),
