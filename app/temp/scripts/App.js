@@ -71,7 +71,23 @@
 	var menuReveal = new _menuReveal2.default();
 	var formValidation = new _validation2.default();
 	var animateHome = new _animateHome2.default();
+
+	//Large Hero content animation
 	var largeItems = new _revealOnScroll2.default((0, _jquery2.default)(".large-item"), "animated zoomIn", "50%");
+
+	//------About-Me section animation start here------//
+	var aboutImage = new _revealOnScroll2.default((0, _jquery2.default)(".about-me__img"), "animated fadeInLeft", "55%");
+	var aboutContent = new _revealOnScroll2.default((0, _jquery2.default)(".about-me__content"), "animated fadeInRight", "48%");
+
+	//------Portfolio Section animation start here ------//
+	var portfolioSubtitle = new _revealOnScroll2.default((0, _jquery2.default)(".portfolio-subtitle"), "animated fadeInLeft", "50%");
+	var portfolioProject = new _revealOnScroll2.default((0, _jquery2.default)(".p-project"), "animated zoomIn", "50%");
+	var portfolioButton = new _revealOnScroll2.default((0, _jquery2.default)(".portfolio-button"), "animated fadeInRight", "60%");
+
+	//------ Contact-us Section animation start here ------//
+	var contactSubtitle = new _revealOnScroll2.default((0, _jquery2.default)(".contact-subtitle"), "animated zoomIn", "60%");
+	var contactSocial = new _revealOnScroll2.default((0, _jquery2.default)(".contact-social"), "animated fadeInRight", "75%");
+	var contactButton = new _revealOnScroll2.default((0, _jquery2.default)(".contact-button"), "animated fadeInLeft", "80%");
 
 /***/ },
 /* 1 */
