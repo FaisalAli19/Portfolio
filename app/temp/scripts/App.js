@@ -72,6 +72,8 @@
 	var formValidation = new _validation2.default();
 	var animateHome = new _animateHome2.default();
 
+	//---------------------- Index Page animation -------------------------//
+
 	//Large Hero content animation
 	var largeItems = new _revealOnScroll2.default((0, _jquery2.default)(".large-item"), "animated zoomIn", "50%");
 
@@ -88,6 +90,43 @@
 	var contactSubtitle = new _revealOnScroll2.default((0, _jquery2.default)(".contact-subtitle"), "animated zoomIn", "60%");
 	var contactSocial = new _revealOnScroll2.default((0, _jquery2.default)(".contact-social"), "animated fadeInRight", "75%");
 	var contactButton = new _revealOnScroll2.default((0, _jquery2.default)(".contact-button"), "animated fadeInLeft", "80%");
+
+	//------------------------------About Page animation -----------------------------------//
+
+	//------About Me animation start here------//
+	var aboutMe = new _revealOnScroll2.default((0, _jquery2.default)(".About-me"), "animated fadeInLeft", "12%");
+	var aboutMeImg = new _revealOnScroll2.default((0, _jquery2.default)(".About-img"), "animated fadeInRight", "10%");
+	var aboutSocial = new _revealOnScroll2.default((0, _jquery2.default)(".About-social"), "animated fadeInDown", "50%");
+
+	//------Skill Section animation------//
+	var skillSubtitle = new _revealOnScroll2.default((0, _jquery2.default)(".skill-subtitle"), "animated zoomIn", "50%");
+	var skillSubtitle = new _revealOnScroll2.default((0, _jquery2.default)(".skill-list-1"), "animated fadeInLeft", "50%");
+	var skillSubtitle = new _revealOnScroll2.default((0, _jquery2.default)(".skill-list-2"), "animated fadeInRight", "50%");
+
+	//------Services section animation------//
+	var servicesFirst = new _revealOnScroll2.default((0, _jquery2.default)(".service-1"), "animated fadeInLeft", "60%");
+	var servicesSecond = new _revealOnScroll2.default((0, _jquery2.default)(".service-2"), "animated zoomIn", "55%");
+	var servicesThird = new _revealOnScroll2.default((0, _jquery2.default)(".service-3"), "animated fadeInRight", "50%");
+
+	//-----------------------Work Page Animation--------------------------------//
+
+	//------Work title animation------//
+	var workParaFirst = new _revealOnScroll2.default((0, _jquery2.default)(".para-1"), "animated fadeInDown", "25%");
+	var workParaSecond = new _revealOnScroll2.default((0, _jquery2.default)(".para-2"), "animated fadeInUp", "25%");
+
+	//-----Work project animation------//
+	var workProject = new _revealOnScroll2.default((0, _jquery2.default)(".work-project"), "animated zoomInUp", "20%");
+
+	//------------------------Contact Page Animation---------------------------//
+
+	//------Contact description animation------//
+	var contactDesc = new _revealOnScroll2.default((0, _jquery2.default)(".contact-desc"), " animated fadeInDown", "35%");
+
+	//------Contact Social animation------//
+	var contactSocio = new _revealOnScroll2.default((0, _jquery2.default)(".contact-socio"), " animated zoomIn", "40%");
+
+	//------Contact Form animation------//
+	var contactForm = new _revealOnScroll2.default((0, _jquery2.default)("form"), " animated slideInUp", "40%");
 
 /***/ },
 /* 1 */

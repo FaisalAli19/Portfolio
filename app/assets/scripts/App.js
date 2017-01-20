@@ -9,6 +9,8 @@ var menuReveal = new MenuReveal();
 var formValidation = new FormValidation();
 var animateHome = new AnimateHome();
 
+//---------------------- Index Page animation -------------------------//
+
 //Large Hero content animation
 var largeItems = new RevealOnScroll($(".large-item"), "animated zoomIn", "50%");
 
@@ -28,3 +30,41 @@ var portfolioButton = new RevealOnScroll($(".portfolio-button"), "animated fadeI
 var contactSubtitle = new RevealOnScroll($(".contact-subtitle"), "animated zoomIn", "60%");
 var contactSocial = new RevealOnScroll($(".contact-social"), "animated fadeInRight", "75%");
 var contactButton = new RevealOnScroll($(".contact-button"), "animated fadeInLeft", "80%");
+
+//------------------------------About Page animation -----------------------------------//
+
+//------About Me animation start here------//
+var aboutMe = new RevealOnScroll($(".About-me"), "animated fadeInLeft", "12%");
+var aboutMeImg = new RevealOnScroll($(".About-img"), "animated fadeInRight", "10%");
+var aboutSocial = new RevealOnScroll($(".About-social"), "animated fadeInDown", "50%");
+
+//------Skill Section animation------//
+var skillSubtitle = new RevealOnScroll($(".skill-subtitle"), "animated zoomIn", "50%");
+var skillSubtitle = new RevealOnScroll($(".skill-list-1"), "animated fadeInLeft", "50%");
+var skillSubtitle = new RevealOnScroll($(".skill-list-2"), "animated fadeInRight", "50%");
+
+//------Services section animation------//
+var servicesFirst = new RevealOnScroll($(".service-1"), "animated fadeInLeft", "60%");
+var servicesSecond = new RevealOnScroll($(".service-2"), "animated zoomIn", "55%");
+var servicesThird = new RevealOnScroll($(".service-3"), "animated fadeInRight", "50%");
+
+
+//-----------------------Work Page Animation--------------------------------//
+
+//------Work title animation------//
+var workParaFirst = new RevealOnScroll($(".para-1"), "animated fadeInDown", "25%");
+var workParaSecond = new RevealOnScroll($(".para-2"), "animated fadeInUp", "25%");
+
+//-----Work project animation------//
+var workProject = new RevealOnScroll($(".work-project"), "animated zoomInUp", "20%");
+
+//------------------------Contact Page Animation---------------------------//
+
+//------Contact description animation------//
+var contactDesc = new RevealOnScroll($(".contact-desc")," animated fadeInDown", "35%");
+
+//------Contact Social animation------//
+var contactSocio = new RevealOnScroll($(".contact-socio")," animated zoomIn", "40%");
+
+//------Contact Form animation------//
+var contactForm = new RevealOnScroll($("form")," animated slideInUp", "40%");
