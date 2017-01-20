@@ -16,6 +16,8 @@
     design to fully interactive, responsive, error-free website and apps.">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- lazysizes javascript file -->
+    <script src="temp/scripts/Vendor.js" type="text/javascript"></script>
 </head>
 <body>
     <!-- Navigation Section -->
@@ -78,7 +80,7 @@
             <div class="row row--padding-large">
                 <!-- Image Column -->
                 <div class="row__medium-6 row--center row--t-padding-untill-medium about-me__img">
-                    <img src="assets/images/faisal.jpg" alt="Faisal picture">
+                    <img class="lazyload" data-src="assets/images/faisal.jpg" alt="Faisal picture">
                 </div>
                 <!-- Content Column -->
                 <div class="row__medium-6 generic-content-container row--t-padding-untill-medium">
@@ -104,12 +106,12 @@
             <!-- Portfolio Projects -->
             <div class="row row--padding">
                 <!-- Project 1 -->
-                <div class="row__medium-6 row--center p-project">
+                <div class="row__medium-12 row__large-6 row--center p-project">
                     <figure class="portfolio-project">
                         <picture>
-                            <source srcset="assets/images/travel-agency--large.jpg 1366w">
-                            <source srcset="assets/images/travel-agency--medium.jpg 990w">
-                            <img srcset="assets/images/travel-agency--small.jpg 640w" alt="travel agency website" class="portfolio-project__img">
+                            <source data-srcset="assets/images/travel-agency--large.jpg 1366w">
+                            <source data-srcset="assets/images/travel-agency--medium.jpg 990w">
+                            <img data-srcset="assets/images/travel-agency--small.jpg 640w" alt="travel agency website" class="portfolio-project__img lazyload">
                         </picture>
 
                         <figcaption class="portfolio-project__content">
@@ -122,12 +124,12 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="row__medium-6 row--center p-project">
+                <div class="row__medium-12 row__large-6 row--center p-project">
                     <figure class="portfolio-project">
                         <picture>
-                            <source srcset="assets/images/Pex--large.jpg 990w">
-                            <source srcset="assets/images/Pex--medium.jpg 990w">
-                            <img srcset="assets/images/Pex--small.jpg 640w" alt="pex website" class="portfolio-project__img">
+                            <source data-srcset="assets/images/Pex--large.jpg 990w">
+                            <source data-srcset="assets/images/Pex--medium.jpg 990w">
+                            <img data-srcset="assets/images/Pex--small.jpg 640w" alt="pex website" class="portfolio-project__img lazyload">
                         </picture>
                         <figcaption class="portfolio-project__content">
                             <h3 class="portfolio-project__title">Pex Portfolio</h3>

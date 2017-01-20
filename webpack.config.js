@@ -1,7 +1,8 @@
 module.exports = {
     //File webpack will convert
     entry: {
-        App: "./app/assets/scripts/App.js"
+        App: "./app/assets/scripts/App.js",
+        Vendor: "./app/assets/scripts/Vendor.js"
     },
     //File output location
     output: {
