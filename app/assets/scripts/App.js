@@ -3,7 +3,7 @@ import FormValidation from "./modules/validation";
 import AnimateHome from "./modules/animate-home";
 import RevealOnScroll from "./modules/reveal-on-scroll";
 import $ from "jquery";
-
+import ModernizLogo from "./modules/moderniz-logo";
 
 var menuReveal = new MenuReveal();
 var formValidation = new FormValidation();
@@ -68,3 +68,7 @@ var contactSocio = new RevealOnScroll($(".contact-socio")," animated zoomIn", "4
 
 //------Contact Form animation------//
 var contactForm = new RevealOnScroll($("form")," animated slideInUp", "40%");
+
+
+//Index page no svg support
+var modernizLogo = new ModernizLogo();

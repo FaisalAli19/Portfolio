@@ -66,6 +66,10 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
+	var _modernizLogo = __webpack_require__(7);
+
+	var _modernizLogo2 = _interopRequireDefault(_modernizLogo);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var menuReveal = new _menuReveal2.default();
@@ -127,6 +131,9 @@
 
 	//------Contact Form animation------//
 	var contactForm = new _revealOnScroll2.default((0, _jquery2.default)("form"), " animated slideInUp", "40%");
+
+	//Index page no svg support
+	var modernizLogo = new _modernizLogo2.default();
 
 /***/ },
 /* 1 */
@@ -11475,6 +11482,56 @@
 	}();
 
 	exports.default = RevealOnScroll;
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(2);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var ModernizLogo = function () {
+	    function ModernizLogo(page, path) {
+	        _classCallCheck(this, ModernizLogo);
+
+	        this.logoImg = (0, _jquery2.default)(".header-section__logo a img");
+	        this.logoPath = this.logoImg.attr("src").split(".svg").join(".png");
+	        this.consoleLog();
+	        this.noSvg();
+	    }
+
+	    _createClass(ModernizLogo, [{
+	        key: "consoleLog",
+	        value: function consoleLog() {
+	            console.log(this.logoImg.attr("src"));
+	            console.log(this.logoPath);
+	        }
+	    }, {
+	        key: "noSvg",
+	        value: function noSvg() {
+	            if (Modernizr.svg == false) {
+	                this.logoImg.attr("src", this.logoPath);
+	            }
+	        }
+	    }]);
+
+	    return ModernizLogo;
+	}();
+
+	exports.default = ModernizLogo;
 
 /***/ }
 /******/ ]);
